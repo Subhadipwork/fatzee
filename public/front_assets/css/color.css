@@ -1,0 +1,50 @@
+@charset "utf-8";
+.nav-separator:before , .nav-separator:after , nav:after , #submit:hover , .to-top-holder:before , .ic__days .ic__day_state_current , .ic__days .ic__day_state_selected  , .ic__days .ic__day:hover  ,   .scroll-nav li a.actscroll:before ,  .scroll-nav ul:before, .scroll-nav ul:after , footer:after  , .hot-desc  , .content-pagination a.current-page , .content-pagination a:hover , .shopping-cart-link-count  , .quantity input.qty , .order-count   , .current-page , .pagination a:hover {
+	background:#AD1409;
+}
+
+.hero-title h4:before, .hero-title h4::after{
+	background:#C59D5F;
+}
+
+.bold-separator:before , .bold-separator:after{
+	background:#C59D5F;
+}
+
+.testimonials-slider ul li {
+	color: #C59D5F;
+}
+
+.testimonials-holder h4 a{
+	color: #C59D5F;
+}
+
+nav li  a.act-link , nav li  a:hover , .nav-social h3  , .nav-social li a:hover  , .parallax-section h3 , .section-title h3 , .team-slider h3 , #submit , #submit-res , .link , .tooltip , .hero-link a:hover  , #twitter-feed li a , .twitter-holder  .customNavigation a:hover , #subscribe  .subscribe-button , .twitter-holder  .customNavigation a.twit-link   , .footer-contacts li a:hover , .footer-social ul li a:hover , .subscribe-message i , .section-icon  , .chefinfo , .team-social  li a:hover , .team-modal h5 , .popup-modal-dismiss:hover , .promotion-price , .testimonials-holder .customNavigation a:hover , .menu-item a:hover , .product-cats li a , .product-price a , .shopping-cart-link   , .subnav a:hover span  , .product-rating  , .product-item-price span ,  .quantity a , .product-meta span a , .tabs-menu .current a   , .order-money ,  .product-name a:hover  , .product-name , .coupon-holder button:hover , .cart-totals  button , .search-submit , .post-tags li a:hover, .tagcloud li a:hover , .post-link:hover , .slides-navigation a:hover , .post-meta i , .gallery-filters  a.gallery-filter-active , .box-item i , .fullheight-carousel-holder .customNavigation a:hover , .carousel-link-holder  h4 , #success_page p strong , .controls button , .content-pagination a , .product-image .customNavigation a , .coupon-holder button.btn-uc , .coupon-holder button.btn-a{
+	color: #AD1409;
+	text-decoration: none;
+}
+.hot-deal:before {
+	border:2px  solid #AD1409;
+}
+.team-modal:before  , .half-circle{
+	border:4px  double #C59D5F;
+}
+ .half-circle {
+	 border:3px  solid #C59D5F;
+}
+.nice-select:after , .subcribe-form form:before {
+	border-color: #AD1409;
+}
+
+.parallax-section h3, .big-number a{
+	color: #C59D5F;
+}
+
+.footer-social h3,.to-top-holder p span {
+	color: #fff;
+}
+
+.to-top {
+	color: #fff;
+}
+

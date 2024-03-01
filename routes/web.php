@@ -4,6 +4,9 @@ use App\Http\Controllers\admin\AuthController;
 use App\Http\Controllers\admin\CategoryController;
 use App\Http\Controllers\admin\DashboardController;
 use App\Http\Controllers\admin\ProductController;
+use App\Http\Controllers\front\AuthController as FrontAuthController;
+use App\Http\Controllers\front\ChackoutController;
+use App\Http\Controllers\front\FrontendController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,8 +20,24 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+// Route::get('/', function () {
+//     return view('frontend.home.index');
+// });
+
+Route::get('/', [FrontendController::class, 'index'])->name('home');
+Route::get('/manu', [FrontendController::class, 'manu'])->name('manu');
+
+Route::post('/user/register', [FrontAuthController::class, 'register'])->name('user.register');
+Route::post('/user/login', [FrontAuthController::class, 'login'])->name('user.login');
+
+
+
+Route::post('/addCart', [ChackoutController::class, 'addCart'])->name('addCart');
+Route::group(['middleware' => 'auth'], function () {
+    Route::get('/user/logout', [FrontAuthController::class, 'logout'])->name('user.logout');
+    Route::post('/chackout', [ChackoutController::class, 'chackout'])->name('menu.order');
+    Route::post('/chackout/store', [ChackoutController::class, 'store'])->name('menu.order.store');
+
 });
 
 

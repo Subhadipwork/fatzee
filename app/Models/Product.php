@@ -23,5 +23,10 @@ class Product extends Model
         return $this->belongsTo('App\Models\Category', 'category_id');
     }
 
+    public function productimage()
+    {
+        return $this->hasOne(ProductImage::class);
+    }   
+
     
 }
